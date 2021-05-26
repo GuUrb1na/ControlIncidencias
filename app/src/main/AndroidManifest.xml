@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.itg.controlincidencias">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/splashScreenTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".views.SubjectActivity"></activity>
+        <activity android:name=".views.ReportActivity" />
+        <activity android:name=".views.CsubjectActivity" />
+        <activity android:name=".views.CreportActivity" />
+        <activity android:name=".views.CteacherActivity" />
+        <activity android:name=".views.CrudActivity" />
+        <activity android:name=".views.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".views.TeacherActivity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="mx.itg.controlincidencias.views.SearchActivity" />
+        </activity>
+        <activity android:name=".views.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

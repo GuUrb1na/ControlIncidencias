@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ControlIncidencias</string>
+    <string name="teacher">Maestros</string>
+    <string name="subject">Materias</string>
+    <string name="report">Reportes</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="Materias">Materias:</string>
+    <string name="nombre"><i>Nombre:</i></string>
+    <string name="rama"><i>Rama:</i></string>
+    <string name="Materia"><i>Materia:</i></string>
+    <string name="Profesor"><i>Profesor:</i></string>
+    <string name="Fecha"><i>Fecha:</i></string>
+
+</resources>

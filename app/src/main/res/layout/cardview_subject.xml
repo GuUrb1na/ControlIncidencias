@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background">
+
+        <ImageView
+            android:id="@+id/cv_imagenteacher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/subject">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/cv_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Materia"
+            android:layout_toEndOf="@id/cv_imagenteacher"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/purple_200">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/cv_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profesor"
+            android:layout_toEndOf="@id/cv_imagenteacher"
+            android:layout_below="@id/cv_nombre"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
